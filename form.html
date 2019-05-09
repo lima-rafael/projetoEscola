@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Cadastro</title>
+    
+    <!--link css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!--meus estilos-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <link href="fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+    
+<!-- header -->
+<header>
+<nav class="navbar navbar-default">
+  <div class="container container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="principal.html">LOGO</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+        
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Nome Aluno</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+<!-- //header -->
+
+<body>
+<!-- escolaSidebar -->
+    <div class="escolaSidebar">
+        <!-- Navigation -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <a id="to-top" class="btn btn-lg btn-dark" href="#top">
+           <span class="sr-only">Toggle to Top Navigation</span>
+	       <i class="fa fa-chevron-up"></i>
+        </a>
+        <nav id="sidebar-wrapper">
+	       <ul class="sidebar-nav">
+		      <a id="menu-close" href="#" class="btn btn-danger pull-right hidden-md hidden-lg toggle"><i class="fa fa-times"></i></a>
+		      
+              <li class="sidebar-brand">
+			     <a href="#top">Aluno: <strong>Nome</strong></a>
+		      </li>
+		      
+               <li>
+			     <a href="boletim.html" title="Go to Top">Boletim</a>
+		       </li>
+		
+               <li>
+			     <a href="#" title="Go to About Us section">Provas</a>
+		       </li>
+		
+               <li>
+			     <a href="#" title="Navigate to Jonathan Adcox IT Resume">Matérias</a>
+		       </li>
+		
+               <li>
+			     <a href="#" title="Navigate to 'Our Services' section">Matricula</a>
+		       </li>
+		<!-- Future Development
+		<li>
+			<a href="#portfolio">Portfolio</a>
+		</li> -->
+		
+               <li>
+			     <a href="#" title="Our Blog">Turma</a>
+		       </li>
+	  
+               <li>
+			     <a href="form.html">Cadastro</a>
+		       </li>
+	
+            </ul>
+        </nav>
+    </div>
+    <!-- //escolaSidebar -->
+    
+<div class="cadastro">
+        <h3>Cadastro de novo Aluno</h3>
+    <hr>
+    <div class="container jumbotron dadosCadastro">
+        <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#aluno" aria-controls="aluno" role="tab" data-toggle="tab">Aluno</a></li>
+    <li role="presentation"><a href="#responsavel" aria-controls="responsavel" role="tab" data-toggle="tab">Responsável</a></li>
+    <li role="presentation"><a href="#gradeCurricular" aria-controls="gradeCurricular" role="tab" data-toggle="tab">Grade Curricular</a></li>
+    <li role="presentation"><a href="#endereco" aria-controls="endereco" role="tab" data-toggle="tab">Endereço</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <!-- aluno -->  
+    <div role="tabpanel" class="tab-pane fade in active" id="aluno">
+        <div class="col-md-9 dadosAluno">
+            <!-- matricula -->
+            <div class="col-md-7">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Codigo:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="codigo" placeholder="Codigo">
+                    </div>
+                </div>                
+            </form>
+            <!-- //matricula -->
+            
+            <!-- Nome do Aluno -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Aluno:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="aluno" placeholder="Nome do aluno">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Nome do Aluno -->
+                
+            <!-- registro -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Registro:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="registro" placeholder="Número do Registro">
+                    </div>
+                </div>                
+            </form>
+            <!-- //registro -->
+            
+            <!-- Nascimento -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Nascimento:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="nascimento" placeholder="">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Nascimento -->
+                
+            <!-- Naturalidade -->
+            <form class="form-horizontal origem">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Naturalidade:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="naturalidade" placeholder="Naturalidade">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Naturalidade -->
+                
+            <!-- Nacionalidade -->
+            <form class="form-horizontal origem">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Nacionalidade:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="nacionalidade" placeholder="Nacionalidade">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Nacionalidade -->
+            
+            <!-- RG -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">RG:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="rg" placeholder="RG">
+                    </div>
+                </div>                
+            </form>
+            <!-- //RG -->
+            
+            <!-- CPF -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">CPF:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                    </div>
+                </div>                
+            </form>
+            <!-- //CPF -->
+            </div>
+            
+            <!-- dadosEscola -->
+            <div class="dadosEscola col-md-5">
+            <!-- Serie -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Serie:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="serie" placeholder="Serie">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Serie -->
+            
+            <!-- Turma -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Turma:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="turma" placeholder="Turma">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Turma -->
+            
+            <!-- Turno -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Turno:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="turno" placeholder="Turno">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Turno -->
+            
+            <!-- Matricula -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Matricula:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="matricula" placeholder="Matricula">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Matricula -->
+            </div>
+            <!-- //dadosEscola -->
+            
+        </div>
+    </div>
+    <!-- //aluno -->
+      
+    <!-- responsavel -->
+    <div role="tabpanel" class="tab-pane fade" id="responsavel">
+        
+        <!-- nomeResponsavel -->
+        <div class="col-md-5 nomeResponsavel">
+            <h4>Filiação</h4>
+            
+            <!-- Mãe -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Mãe:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="mae" placeholder="Mãe">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Mãe -->
+            
+            <!-- Pai -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Pai:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="pai" placeholder="Pai">
+                    </div>
+                </div>                
+            </form>
+            <!-- //pai -->
+            
+            <!-- Outros Responsáveis -->
+            <form class="form-horizontal">
+            	<h5>Outros Responsáveis</h5>
+            	
+                <div class="form-group">  	               	
+                    <label for="inputEmail3" class="col-sm-2 control-label">Nome:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="pai" placeholder="Nome">
+                    </div>
+                </div>
+                <select class="form-control">
+                	<option>Grau Parentesco</option>
+                	<option>Tio(a)</option>
+                	<option>Avô</option>
+                	<option>Avó</option>
+                </select> 
+                
+                <input class="btn btn-default" type="submit" value="Adicionar">               
+            </form>
+            <!-- //Outros Responsáveis -->
+            
+        </div>
+        <!-- //nomeResponsavel -->
+       
+        <!-- contato -->
+        <div class="col-md-4 contato">
+            <h4>Contato</h4>
+            
+            <!-- Conato -->
+            <form class="form-horizontal">
+                <div class="form-group row">
+                    <label for="example-tel-input" class="col-md-2 col-form-label">telefone:</label>
+                    
+                    <div class="col-md-10">
+                        <input class="form-control" type="tel" value="(048) 5555-5555" id="example-tel-input">
+                    </div>
+                </div>                
+            </form>
+            <!-- //contato -->
+            
+            <!-- Pai -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Celular:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="tel" value="(048) 5 5555-5555" id="example-tel-input">
+                    </div>
+                </div>                
+            </form>
+            <!-- //pai -->
+        </div>
+        <!-- // contato -->
+    </div>
+    <!-- //responsavel -->
+    
+    <!-- Grade Curricular -->  
+    <div role="tabpanel" class="tab-pane fade" id="gradeCurricular">
+    	<div class="col-md-9">
+    	<div class="col-md 8 disciplinasMatriculadas">
+    		<table id="customers">
+    			<tr>
+    				<th>Disciplina</th>
+    			 	<th>Professor</th>
+    				<th>Observações</th>
+  				</tr>
+  				
+  				<tr>
+  					<td>Português</td>
+  					<td>Lorem Ipsum</td>
+  					<td>Sem Comentarios</td>
+  				</tr>
+                
+                <tr>
+  					<td>Historia</td>
+  					<td>Lorem Ipsum</td>
+  					<td>Sem Comentarios</td>
+  				</tr>
+                
+                <tr>
+  					<td>Matematica</td>
+  					<td>Lorem Ipsum</td>
+  					<td>Sem Comentarios</td>
+  				</tr>
+                
+                <tr>
+  					<td>Fisica</td>
+  					<td>Lorem Ipsum</td>
+  					<td>Sem Comentarios</td>
+  				</tr>
+                
+                <tr>
+  					<td>Quimica</td>
+  					<td>Lorem Ipsum</td>
+  					<td>Sem Comentarios</td>
+  				</tr>
+            </table>            
+        </div>
+        </div>
+    </div>
+    <!-- //Grade Curricular -->
+    
+    <!-- Endereço -->
+    <div role="tabpanel" class="tab-pane fade" id="endereco">
+        <div class="col-md-9">
+            <!-- Endereço -->
+            <div class="col-md-12">
+            <div class="col-md-9">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="end" class="col-sm-2 control-label">Endereço:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="end" placeholder="Rua, Passagem, Avenida">
+                    </div>
+                </div>                
+            </form>
+            </div>
+                
+            <div class="col-md-3">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="number" class="col-sm-2 control-label">Nº:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="number" placeholder="Numero">
+                    </div>
+                </div>                
+            </form>
+            </div>
+            </div>
+            <!-- //Endereço -->
+            
+            <!-- complemento -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="complemento" class="col-sm-2 control-label">Complemento:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="complemento" placeholder="Casa, Apartamento, Vila">
+                    </div>
+                </div>                
+            </form>
+            <!-- //complemento -->
+            
+            <!-- complementos de endereços -->
+            <div class="col-md-12">
+            <!-- //Lado Esquerdo -->
+            <div class="col-md-6">
+            <!-- bairro -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="bairro" class="col-sm-2 control-label">Bairro:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                    </div>
+                </div>                
+            </form>
+            <!-- //bairro -->
+            
+            <!-- Cidade -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="estado" class="col-sm-2 control-label">Estado:</label>
+                    <div class="col-sm-10">
+                    <select name="uf" id="uf">
+	                   <option value="">Selecione</option>
+	                   <option value="AC">AC</option>
+	                   <option value="AL">AL</option>
+	                   <option value="AP">AP</option>
+	                   <option value="AM">AM</option>
+	                   <option value="BA">BA</option>
+	                   <option value="CE">CE</option>
+	                   <option value="DF">DF</option>
+	                   <option value="ES">ES</option>
+	                   <option value="GO">GO</option>
+	                   <option value="MA">MA</option>
+	                   <option value="MT">MT</option>
+	                   <option value="MS">MS</option>
+	                   <option value="MG">MG</option>
+	                   <option value="PA">PA</option>
+	                   <option value="PB">PB</option>
+	                   <option value="PR">PR</option>
+	                   <option value="PE">PE</option>
+	                   <option value="PI">PI</option>
+	                   <option value="RJ">RJ</option>
+	                   <option value="RN">RN</option>
+	                   <option value="RS">RS</option>
+	                   <option value="RO">RO</option>
+	                   <option value="RR">RR</option>
+	                   <option value="SC">SC</option>
+	                   <option value="SP">SP</option>
+	                   <option value="SE">SE</option>
+	                   <option value="TO">TO</option>
+                    </select>
+                    </div>
+                </div>                
+            </form>
+            <!-- //Cidade -->
+            
+            <!-- cep -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="cep" class="col-sm-2 control-label">CEP:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cep" placeholder="CEP">
+                    </div>
+                </div>                
+            </form>
+            <!-- //cep -->
+            </div>
+            <!-- //Lado Esquerdo -->
+            
+            <!-- Lado Direito -->
+            <div class="col-md-6">
+            <!-- Cidade -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="cidade" class="col-sm-2 control-label">Cidade:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                    </div>
+                </div>                
+            </form>
+            <!-- //Cidade -->
+            
+            <!-- País -->
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="pais" class="col-sm-2 control-label">País:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="pais" placeholder="País">
+                    </div>
+                </div>                
+            </form>
+            <!-- //País -->
+            </div>
+            <!-- //Lado Direito -->
+                
+            </div>
+            <!-- //complementos de endereços -->
+        </div>    	
+    </div>
+    <!-- //Endereço -->
+  	</div>
+            
+    <!-- btnCadastro -->
+    <div class="btnCadastro col-md-3">
+        <div class="col-md-8">
+        <!-- fotoAluno -->
+        <div id="teste" class="colImage">
+            <p>Foto Aluno</p>            
+            <div class="row fotoAluno">
+                    <img src="image/fotoExemplos/3x4.jpg" alt="Foto do Aluno">
+            </div>
+        </div>
+        <!-- //fotoAluno -->
+            
+        <!-- sexo -->
+        <div class="sexo">
+            <h5>Sexo</h5>
+                
+            <div class="radio">
+                <label>
+                    <input type="radio" name="sexo" id="masculino" value="option1">
+                    Masculino
+                </label>
+            </div>
+        
+            <div class="radio">
+                <label>
+                    <input type="radio" name="sexo" id="feminino" value="option2">
+                    Feminino
+                </label>
+            </div>
+        </div>
+        <!-- //sexo -->
+            
+        </div>
+        
+        <div class="col-md-4">
+        <!-- save -->
+        <div class="row btnPrimary btnIcons">
+            <button class="btn btn-default" type="submit"><i class="fas fa-save"></i> Salvar</button>   
+        </div>
+        <!-- save -->
+        
+        <!-- alterar -->
+        <div class="row btnIcons">
+            <button class="btn btn-default" type="submit"><i class="fas fa-sync-alt"></i> Alterar</button>
+        </div>
+        <!-- alterar -->
+        
+        <!-- Excluir -->
+        <div class="row btnIcons">
+            <button class="btn btn-default" type="submit"><i class="fas fa-trash"></i> Excluir</button>
+        </div>
+        <!-- Excluir -->
+        
+        <!-- Novo -->
+        <div class="row btnIconsFinal">
+            <button class="btn btn-default" type="submit"><i class="fas fa-plus"></i> Novo</button>
+        </div>
+        <!-- Novo -->
+        </div>
+    </div>
+    <!-- //btnCadastro -->   
+            
+     <div class="col-md-9">
+        <form>
+            <h5>Observações sobre o Aluno</h5>
+            <textarea class="form-control" rows="5"></textarea>
+        </form>
+    </div>
+</div>
+    
+    </div>
+</div>
+
+<footer class="container-fluid bg-grey py-5">
+<div class="container">
+   <div class="row">
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
+                  <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                  <p>Use this tool as test data for an automated system or find your next pen</p>
+               </div>
+            </div>
+            <div class="col-md-6 px-4">
+               <h6> About Company</h6>
+               <p>But horizontal lines can only be a full pixel high.</p>
+               <a href="#" class="btn-footer"> More Info </a><br>
+               <a href="#" class="btn-footer"> Contact Us</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="row">
+            <div class="col-md-6 px-4">
+               <h6> Help us</h6>
+               <div class="row ">
+                  <div class="col-md-6">
+                     <ul>
+                        <li> <a href="#"> Home</a> </li>
+                        <li> <a href="#"> About</a> </li>
+                        <li> <a href="#"> Service</a> </li>
+                        <li> <a href="#"> Team</a> </li>
+                        <li> <a href="#"> Help</a> </li>
+                        <li> <a href="#"> Contact</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-6 px-4">
+                     <ul>
+                        <li> <a href="#"> Cab Faciliy</a> </li>
+                        <li> <a href="#"> Fax</a> </li>
+                        <li> <a href="#"> Terms</a> </li>
+                        <li> <a href="#"> Policy</a> </li>
+                        <li> <a href="#"> Refunds</a> </li>
+                        <li> <a href="#"> Paypal</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 ">
+               <h6> Newsletter</h6>
+               <div class="social">
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               </div>
+               <form class="form-footer my-3">
+                  <input type="text"  placeholder="search here...." name="search">
+                  <input type="button" value="Go" >
+               </form>
+               <p>That's technology limitation of LCD monitors</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+    <hr>
+        <address><p>Todos os direitos reservados</p></address>
+</footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/menuSidebar.js"></script>
+</body>
